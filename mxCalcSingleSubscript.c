@@ -54,15 +54,15 @@ uintptr_t	mxCalcSingleSubscript(mxArray *inArray, uintptr_t nSubs, uintptr_t *su
 	 * 		for more in cTraceo.
 	 */
 	
-	uintptr_t index = 0;
+	uintptr_t linearIndex = 0;
 	uintptr_t col, row, nRows;
 	
-	row		= subs[0];
-	col		= subs[1];
-	nRows	= inArray->dims[0];
-	index	= row + col * nRows;
+	row		    = subs[0];
+	col		    = subs[1];
+	nRows	    = inArray->dims[0];
+	linearIndex	= row + col * nRows;
 	
-	//printf("mxCalcSingleSubscript(): (row, col, nRows) = (%lu, %lu, %lu) => (%lu)\n", subs[0], subs[1], nRows, index);
+	//printf("mxCalcSingleSubscript(): (row, col, nRows) = (%lu, %lu, %lu) => (%lu)\n", subs[0], subs[1], nRows, linearIndex);
 	
-	return index;
+	return linearIndex;
 }
