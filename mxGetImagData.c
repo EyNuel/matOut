@@ -1,5 +1,5 @@
 #pragma once
-#include "matlabOut.h"
+#include "matOut.h"
 
 
 void* mxGetImagData(mxArray* inArray);

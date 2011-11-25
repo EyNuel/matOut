@@ -1,6 +1,6 @@
 #pragma once
 #include <stdlib.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 void mxDestroyArray(mxArray* inArray);
 

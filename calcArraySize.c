@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 #include "dataElementSize.c"
 
 uint32_t	calcArraySize(mxArray* inArray);
@@ -24,7 +24,6 @@ uint32_t	calcArraySize(mxArray* inArray){
 	
 	uintptr_t	nBytes = 0;
 	uintptr_t	maxLengthFieldname = 0;
-	uintptr_t	temp = 0;
 	
 	
 	if (inArray == NULL){

@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 void matClose(MATFile* file);
 

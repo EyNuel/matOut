@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 uintptr_t	writeStructArray(		MATFile* outfile, const char* arrayName, mxArray* inArray);
 
@@ -14,11 +14,6 @@ uintptr_t	writeStructArray(MATFile* outfile, const char* arrayName, mxArray* inA
 	uintptr_t	maxLengthFieldname = 0;
 	uintptr_t	nBytes, paddingBytes = 0;
 	
-	
-	///---------------------------------------------------------
-	//inArray->dims[0]	= 1;
-	//inArray->dims[1]	= 1;
-	///---------------------------------------------------------
 	
 	/* *********************************************************
 	 * write miMATRIX tag and total number of bytes in the matrix

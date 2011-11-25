@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 /*
  * Writes an empty mxArray to file.

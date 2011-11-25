@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 #include "writeDataElement.c"
 #include "dataElementSize.c"
 #include "mxGetData.c"
@@ -94,7 +94,7 @@ uintptr_t	writeArray(MATFile* outfile, const char* arrayName, mxArray* inArray){
 	 * write the array name element
 	 * NOTE: for mxArrays which are a child of another one
 	 * 		 the name is not actually written as it is already
-	 * 		 defined in the parent structure's filednames.
+	 * 		 defined in the parent structure's fieldnames.
 	 */
 	if (inArray->isChild == true){
 		writeDataElement(outfile, miINT8, (void*)arrayName, sizeof(char), 0);

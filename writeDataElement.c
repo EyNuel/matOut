@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 void writeDataElement(FILE* outfile, uint32_t miTYPE, void* data, size_t dataItemSize, uint32_t nDataItems);
 

@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <stdbool.h>
-#include "matlabOut.h"
+#include "matOut.h"
 #include "writeArray.c"
 #include "writeStructArray.c"
 

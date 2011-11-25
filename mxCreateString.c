@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <string.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 mxArray* mxCreateString(const char *);
 

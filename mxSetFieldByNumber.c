@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <stdbool.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 
 void	mxSetFieldByNumber(	mxArray*	mxStruct, uint32_t index, uint32_t iField, mxArray* inArray);

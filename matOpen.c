@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#include "matlabOut.h"
+#include "matOut.h"
 #include "writeMatfileHeader.c"
 
 

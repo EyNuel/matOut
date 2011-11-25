@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <stdlib.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 mxArray* mxCreateStructMatrix(uintptr_t nRows, uintptr_t nCols, uintptr_t nFields, const char **fieldNames);
 

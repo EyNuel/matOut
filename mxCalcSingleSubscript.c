@@ -1,6 +1,6 @@
 #pragma once
 #include <stdint.h>
-#include "matlabOut.h"
+#include "matOut.h"
 
 uintptr_t	mxCalcSingleSubscript(mxArray *inArray, uintptr_t nSubs, uintptr_t *subs);
 
